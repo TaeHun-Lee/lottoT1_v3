@@ -1,0 +1,8 @@
+<h1>여기는 게시물이 보이는 페이지입니다.</h1>
+  <% @post.each do |x| %>
+  <%= x.title %> <br>
+  <%= x.content %> <br>
+  <a href='/home/delete/<%=x.id %>'>삭제 </a>
+  <a href='/home/edit/<%=x.id %>'>수정</a> <br>
+  <% end %>
+<a href='/home/new'>글쓰러 가기</a>
